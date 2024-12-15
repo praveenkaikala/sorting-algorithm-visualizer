@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="nav-container"></div>
-        <h2>Sorting Algorithm Visualizer</h2>
-        <div class="nav">
+        <h2 onclick="window.location.reload()" class="title">Sorting Algorithm Visualizer</h2>
+        <div class="navbar">
+            <a onclick="genarate()" id="random">Genarate Array</a>
             <span class="options">
                 <select name="select sort algorithm" id="menu">
                     <option value="1">Select Algoritm</option>
@@ -46,7 +48,7 @@
                 </select>
 
             </span>
-            <button>Sort</button>
+            <button>Sorting</button>
         </div>
     </div>
     <br/>
