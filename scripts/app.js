@@ -47,14 +47,14 @@ const start=async()=>{
       alert("No Algorithm Selected");
       return;
     }
-    let algorithm = new sortAlgorithms(speedValue);
+    let algorithm = new Algorithms(speedValue);
     if (algoValue === 1) await algorithm.BubbleSort();
     if (algoValue === 2) await algorithm.SelectionSort();
     if (algoValue === 3) await algorithm.InsertionSort();
     if (algoValue === 4) await algorithm.MergeSort();
     if (algoValue === 5) await algorithm.QuickSort();
     let now1 = new Date();
-    document.getElementById('Ttime').innerHTML = (now1 - now) / 1000;
+    // document.getElementById('Ttime').innerHTML = (now1 - now) / 1000;
 }
 
 
