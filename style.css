@@ -81,7 +81,12 @@ align-items: stretch;
 {
     cursor: pointer;
 }
-
+.container
+{
+    width: 100vw;
+    position: relative;
+    height: fit-content;
+}
 .center
 {
     margin: 0 auto;
@@ -202,4 +207,44 @@ align-items: stretch;
   .social a:hover{
     color: white;
   }
-  
+
+  .legend
+  {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+  }
+  .legend>div
+  {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+  .black
+  {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: black;
+  }
+  .green
+  {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: rgb(100, 199, 100);
+  }
+  .pink
+  {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color:pink;
+  }
+  @media screen and (max-width: 600px) {
+    .legend
+    {
+        right: 0;
+    }
+  }
