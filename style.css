@@ -1,5 +1,5 @@
 :root{
-    --primary-color:#101010;
+    --primary-color:#a8a0a0;
     --secondary-color:#101010
 }
 
@@ -20,7 +20,7 @@ align-items: stretch;
 .title{
     background-color: var(--primary-color);
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     padding-block: 0.5rem;
     color:#fff;
     cursor: pointer;
@@ -35,23 +35,23 @@ align-items: stretch;
     font-size: 18px;
     min-height: 80px;
     padding-block: 0.6rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
 }
 .navbar a{
    cursor: pointer;
-   color: #fff;
+   color: var(--secondary-color);
    font-weight: bold;
-   padding: 8px 10px;
+   padding: 0.4rem 2rem;
    border-radius: 6px;
-   transition: 0.3s;
-   background-color: #0a0a0a;
+   transition:all 0.3s ;
+   background: white;
    border: 1px solid white;
 }
 .navbar a:hover
 {
-    background-color: white;
-    color: var(--secondary-color);
+    background-color:var(--secondary-color);
+    color:white
 }
 .navbar #menu
 {
@@ -100,6 +100,19 @@ align-items: stretch;
     flex-direction: row;
     background:#ede6ea;
 }
+.start
+{
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+.start:hover{
+    background: var(--secondary-color);
+    color: white;
+}
 .cell
 {
     display: flex;
@@ -136,17 +149,11 @@ align-items: stretch;
     color: white;
     transition: all 0.4s ease-out;
   }
-  
-  /* Footer CSS */
-  .fa.fa-heart {
-    color: #eb2c13;
-  }
   footer {
     text-align: center;
     font-size: 18px;
     color: #2c3e50;
     padding: 1.6em;
-    visibility: hidden;
     font-weight: 700;
   }
   .footer > p:nth-child(1) {
@@ -158,13 +165,41 @@ align-items: stretch;
   {
     font-weight: bold;
   }
-  /* .footer > p:nth-child(2) {
-    margin-bottom: 0.6em;
-  } */
   .link {
     text-decoration: none;
     font-weight: bold;
     color: #ff5252;
     font-size: 20px;
+  }
+  .footer-personal  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 0%;
+    background:var(--primary-color);
+    color: white;
+    height: auto;
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .footerr .social a{
+    font-size: 1.6rem;
+    margin: 0rem 1rem 0rem 0rem;
+    background-color: white;
+    color : black;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: .15rem solid var(--secondary-color);
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+  }
+  
+  .social a:hover{
+    color: white;
   }
   

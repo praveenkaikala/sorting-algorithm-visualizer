@@ -84,7 +84,7 @@ class Algorithms {
         }
         document.getElementById('time').innerHTML = "O(nlog(n))";
         document.querySelector(".footer > p:nth-child(1)").style.visibility = "visible";
-        // document.querySelector("footer").style.visibility = "visible";
+
     }
 
     MergeDivider = async (start, end) => {

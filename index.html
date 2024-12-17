@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Sorting Algorithm Visualizer</title>
 </head>
 <body>
     <div class="nav-container"></div>
         <h2 onclick="window.location.reload()" class="title">Sorting Algorithm Visualizer</h2>
         <div class="navbar">
-            <a onclick="genarate()" id="random">Genarate Array</a>
+           
             <span class="options">
                 <select name="select sort algorithm" id="menu" class="algo-menu">
-                    <option value="1">Select Algoritm</option>
+                    <option value="0">Select Algoritm</option>
                     <option value="1">Bubble Sort</option>
                     <option value="2">Selection Sort</option>
                     <option value="3">Insertion Sort</option>
@@ -48,7 +48,8 @@
                 </select>
 
             </span>
-            <button class="start">Sorting</button>
+            <a onclick="genarate()" id="random">Genarate Array</a>
+            <button class="start">Sort</button>
         </div>
     </div>
     <br/>
@@ -60,6 +61,16 @@
     <footer class="footer">
         <p>Time Complexity = <span id="time"></span> and Total Time Taken = <span id="ttime"></span> seconds</p>
     </footer>
+    <div class="footer-personal">
+        <div class="social">
+          
+          <a href="mailto:kaikalapraveen24@gmail.com">Gmail</i></a>
+          <a href="https://www.linkedin.com/in/praveenkaikala/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/praveenkaikala" target="_blank">GitHub</a>
+    
+        </div>
+    
+         
     <script src="scripts/app.js"></script>
     <script src="scripts/helper.js"></script>
     <script src="scripts/algorithm.js"></script>
